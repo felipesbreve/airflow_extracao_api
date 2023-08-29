@@ -1,0 +1,15 @@
+[2023-08-29 19:33:53,479] {processor.py:153} INFO - Started process (PID=17803) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-29 19:33:53,481] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-08-29 19:33:53,483] {logging_mixin.py:115} INFO - [2023-08-29 19:33:53,483] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-29 19:33:53,496] {processor.py:653} WARNING - No viable dags retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-29 19:33:53,800] {processor.py:161} INFO - Processing /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.393 seconds
+[2023-08-29 19:36:27,753] {processor.py:153} INFO - Started process (PID=19136) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-29 19:36:27,755] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-08-29 19:36:27,757] {logging_mixin.py:115} INFO - [2023-08-29 19:36:27,757] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-29 19:36:27,770] {processor.py:653} WARNING - No viable dags retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-29 19:36:27,873] {processor.py:161} INFO - Processing /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.206 seconds
+[2023-08-29 19:37:52,033] {processor.py:153} INFO - Started process (PID=19821) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-29 19:37:52,036] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-08-29 19:37:52,038] {logging_mixin.py:115} INFO - [2023-08-29 19:37:52,038] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-29 19:37:52,140] {processor.py:653} WARNING - No viable dags retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-29 19:37:52,397] {processor.py:161} INFO - Processing /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.476 seconds

@@ -1,0 +1,15 @@
+[2023-08-29 19:33:50,019] {processor.py:153} INFO - Started process (PID=17796) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-29 19:33:50,216] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-29 19:33:50,219] {logging_mixin.py:115} INFO - [2023-08-29 19:33:50,218] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-29 19:33:50,237] {processor.py:653} WARNING - No viable dags retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-29 19:33:50,580] {processor.py:161} INFO - Processing /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.703 seconds
+[2023-08-29 19:36:25,359] {processor.py:153} INFO - Started process (PID=19113) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-29 19:36:25,362] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-29 19:36:25,368] {logging_mixin.py:115} INFO - [2023-08-29 19:36:25,368] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-29 19:36:25,385] {processor.py:653} WARNING - No viable dags retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-29 19:36:25,674] {processor.py:161} INFO - Processing /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.434 seconds
+[2023-08-29 19:37:49,439] {processor.py:153} INFO - Started process (PID=19806) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-29 19:37:49,445] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-29 19:37:49,447] {logging_mixin.py:115} INFO - [2023-08-29 19:37:49,447] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-29 19:37:49,549] {processor.py:653} WARNING - No viable dags retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-29 19:37:49,882] {processor.py:161} INFO - Processing /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.564 seconds

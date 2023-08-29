@@ -1,0 +1,169 @@
+[2023-08-29 19:34:30,775] {processor.py:153} INFO - Started process (PID=18053) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-29 19:34:30,781] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py for tasks to queue
+[2023-08-29 19:34:30,783] {logging_mixin.py:115} INFO - [2023-08-29 19:34:30,783] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-29 19:34:30,954] {processor.py:651} INFO - DAG(s) dict_keys(['example_time_delta_sensor_async']) retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-29 19:34:32,393] {logging_mixin.py:115} INFO - [2023-08-29 19:34:32,393] {manager.py:508} INFO - Created Permission View: can delete on DAG:example_time_delta_sensor_async
+[2023-08-29 19:34:32,512] {logging_mixin.py:115} INFO - [2023-08-29 19:34:32,511] {manager.py:508} INFO - Created Permission View: can read on DAG:example_time_delta_sensor_async
+[2023-08-29 19:34:32,539] {logging_mixin.py:115} INFO - [2023-08-29 19:34:32,538] {manager.py:508} INFO - Created Permission View: can edit on DAG:example_time_delta_sensor_async
+[2023-08-29 19:34:32,539] {logging_mixin.py:115} INFO - [2023-08-29 19:34:32,539] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:34:32,566] {logging_mixin.py:115} INFO - [2023-08-29 19:34:32,566] {dag.py:2398} INFO - Creating ORM DAG for example_time_delta_sensor_async
+[2023-08-29 19:34:32,704] {logging_mixin.py:115} INFO - [2023-08-29 19:34:32,704] {dag.py:2927} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2023-08-29 19:34:32,839] {processor.py:161} INFO - Processing /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py took 2.212 seconds
+[2023-08-29 19:36:51,002] {processor.py:153} INFO - Started process (PID=19344) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-29 19:36:51,006] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py for tasks to queue
+[2023-08-29 19:36:51,010] {logging_mixin.py:115} INFO - [2023-08-29 19:36:51,010] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-29 19:36:51,122] {processor.py:651} INFO - DAG(s) dict_keys(['example_time_delta_sensor_async']) retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-29 19:36:51,819] {logging_mixin.py:115} INFO - [2023-08-29 19:36:51,819] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:36:52,101] {logging_mixin.py:115} INFO - [2023-08-29 19:36:52,101] {dag.py:2927} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2023-08-29 19:36:52,698] {logging_mixin.py:115} INFO - [2023-08-29 19:36:52,698] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:36:52,713] {logging_mixin.py:115} INFO - [2023-08-29 19:36:52,713] {dag.py:2927} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2023-08-29 19:36:53,771] {logging_mixin.py:115} INFO - [2023-08-29 19:36:53,771] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:36:53,788] {logging_mixin.py:115} INFO - [2023-08-29 19:36:53,788] {dag.py:2927} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2023-08-29 19:36:53,795] {processor.py:164} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.DatabaseError: database disk image is malformed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 155, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 660, in process_file
+    dagbag.sync_to_db()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 615, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 360, in iter
+    raise retry_exc.reraise()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 193, in reraise
+    raise self.last_attempt.result()
+  File "/usr/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 629, in sync_to_db
+    DAG.bulk_write_to_db(self.dags.values(), session=session)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dag.py", line 2470, in bulk_write_to_db
+    DagCode.bulk_sync_to_db(filelocs, session=session)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagcode.py", line 77, in bulk_sync_to_db
+    session.query(DagCode)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2683, in all
+    return self._iter().all()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2818, in _iter
+    result = self.session.execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1670, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DatabaseError: (sqlite3.DatabaseError) database disk image is malformed
+[SQL: SELECT dag_code.fileloc_hash AS dag_code_fileloc_hash, dag_code.fileloc AS dag_code_fileloc, dag_code.last_updated AS dag_code_last_updated, dag_code.source_code AS dag_code_source_code 
+FROM dag_code 
+WHERE dag_code.fileloc_hash IN (?)]
+[parameters: (50907969070950264,)]
+(Background on this error at: http://sqlalche.me/e/14/4xp6)
+[2023-08-29 19:38:16,842] {processor.py:153} INFO - Started process (PID=20030) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-29 19:38:16,844] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py for tasks to queue
+[2023-08-29 19:38:16,847] {logging_mixin.py:115} INFO - [2023-08-29 19:38:16,847] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-29 19:38:16,954] {processor.py:651} INFO - DAG(s) dict_keys(['example_time_delta_sensor_async']) retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-29 19:38:17,431] {logging_mixin.py:115} INFO - [2023-08-29 19:38:17,431] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:38:17,715] {logging_mixin.py:115} INFO - [2023-08-29 19:38:17,715] {dag.py:2927} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2023-08-29 19:38:18,201] {logging_mixin.py:115} INFO - [2023-08-29 19:38:18,200] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:38:18,213] {logging_mixin.py:115} INFO - [2023-08-29 19:38:18,213] {dag.py:2927} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2023-08-29 19:38:18,577] {logging_mixin.py:115} INFO - [2023-08-29 19:38:18,577] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:38:18,591] {logging_mixin.py:115} INFO - [2023-08-29 19:38:18,590] {dag.py:2927} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2023-08-29 19:38:18,596] {processor.py:164} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.DatabaseError: database disk image is malformed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 155, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 660, in process_file
+    dagbag.sync_to_db()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 615, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 360, in iter
+    raise retry_exc.reraise()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 193, in reraise
+    raise self.last_attempt.result()
+  File "/usr/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 629, in sync_to_db
+    DAG.bulk_write_to_db(self.dags.values(), session=session)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dag.py", line 2470, in bulk_write_to_db
+    DagCode.bulk_sync_to_db(filelocs, session=session)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagcode.py", line 77, in bulk_sync_to_db
+    session.query(DagCode)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2683, in all
+    return self._iter().all()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2818, in _iter
+    result = self.session.execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1670, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DatabaseError: (sqlite3.DatabaseError) database disk image is malformed
+[SQL: SELECT dag_code.fileloc_hash AS dag_code_fileloc_hash, dag_code.fileloc AS dag_code_fileloc, dag_code.last_updated AS dag_code_last_updated, dag_code.source_code AS dag_code_source_code 
+FROM dag_code 
+WHERE dag_code.fileloc_hash IN (?)]
+[parameters: (50907969070950264,)]
+(Background on this error at: http://sqlalche.me/e/14/4xp6)

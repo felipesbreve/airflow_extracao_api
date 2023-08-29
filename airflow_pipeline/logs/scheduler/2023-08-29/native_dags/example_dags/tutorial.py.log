@@ -1,0 +1,25 @@
+[2023-08-29 19:34:06,570] {processor.py:153} INFO - Started process (PID=17877) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py
+[2023-08-29 19:34:06,572] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2023-08-29 19:34:06,575] {logging_mixin.py:115} INFO - [2023-08-29 19:34:06,574] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py
+[2023-08-29 19:34:06,674] {processor.py:651} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py
+[2023-08-29 19:34:07,860] {logging_mixin.py:115} INFO - [2023-08-29 19:34:07,860] {manager.py:508} INFO - Created Permission View: can delete on DAG:tutorial
+[2023-08-29 19:34:08,021] {logging_mixin.py:115} INFO - [2023-08-29 19:34:08,021] {manager.py:508} INFO - Created Permission View: can read on DAG:tutorial
+[2023-08-29 19:34:08,057] {logging_mixin.py:115} INFO - [2023-08-29 19:34:08,057] {manager.py:508} INFO - Created Permission View: can edit on DAG:tutorial
+[2023-08-29 19:34:08,058] {logging_mixin.py:115} INFO - [2023-08-29 19:34:08,058] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:34:08,181] {logging_mixin.py:115} INFO - [2023-08-29 19:34:08,181] {dag.py:2398} INFO - Creating ORM DAG for tutorial
+[2023-08-29 19:34:08,343] {logging_mixin.py:115} INFO - [2023-08-29 19:34:08,343] {dag.py:2927} INFO - Setting next_dagrun for tutorial to 2023-08-28T22:34:08.341906+00:00, run_after=2023-08-29T22:34:08.341906+00:00
+[2023-08-29 19:34:08,545] {processor.py:161} INFO - Processing /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py took 2.073 seconds
+[2023-08-29 19:36:36,398] {processor.py:153} INFO - Started process (PID=19221) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py
+[2023-08-29 19:36:36,401] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2023-08-29 19:36:36,403] {logging_mixin.py:115} INFO - [2023-08-29 19:36:36,403] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py
+[2023-08-29 19:36:36,496] {processor.py:651} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py
+[2023-08-29 19:36:36,753] {logging_mixin.py:115} INFO - [2023-08-29 19:36:36,752] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:36:37,058] {logging_mixin.py:115} INFO - [2023-08-29 19:36:37,057] {dag.py:2927} INFO - Setting next_dagrun for tutorial to 2023-08-28T22:36:37.056629+00:00, run_after=2023-08-29T22:36:37.056629+00:00
+[2023-08-29 19:36:37,169] {processor.py:161} INFO - Processing /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py took 0.833 seconds
+[2023-08-29 19:38:02,990] {processor.py:153} INFO - Started process (PID=19909) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py
+[2023-08-29 19:38:02,991] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2023-08-29 19:38:02,993] {logging_mixin.py:115} INFO - [2023-08-29 19:38:02,993] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py
+[2023-08-29 19:38:03,102] {processor.py:651} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py
+[2023-08-29 19:38:03,274] {logging_mixin.py:115} INFO - [2023-08-29 19:38:03,274] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:38:03,460] {logging_mixin.py:115} INFO - [2023-08-29 19:38:03,460] {dag.py:2927} INFO - Setting next_dagrun for tutorial to 2023-08-28T22:38:03.459508+00:00, run_after=2023-08-29T22:38:03.459508+00:00
+[2023-08-29 19:38:03,503] {processor.py:161} INFO - Processing /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/tutorial.py took 0.588 seconds

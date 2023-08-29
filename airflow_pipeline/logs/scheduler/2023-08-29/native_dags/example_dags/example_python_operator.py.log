@@ -1,0 +1,231 @@
+[2023-08-29 19:35:11,179] {processor.py:153} INFO - Started process (PID=18468) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2023-08-29 19:35:11,182] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2023-08-29 19:35:11,188] {logging_mixin.py:115} INFO - [2023-08-29 19:35:11,187] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2023-08-29 19:35:11,597] {logging_mixin.py:115} INFO - [2023-08-29 19:35:11,596] {example_python_operator.py:68} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2023-08-29 19:35:11,598] {processor.py:651} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2023-08-29 19:35:12,629] {logging_mixin.py:115} INFO - [2023-08-29 19:35:12,628] {manager.py:508} INFO - Created Permission View: can delete on DAG:example_python_operator
+[2023-08-29 19:35:12,770] {logging_mixin.py:115} INFO - [2023-08-29 19:35:12,770] {manager.py:508} INFO - Created Permission View: can read on DAG:example_python_operator
+[2023-08-29 19:35:12,909] {logging_mixin.py:115} INFO - [2023-08-29 19:35:12,908] {manager.py:508} INFO - Created Permission View: can edit on DAG:example_python_operator
+[2023-08-29 19:35:12,910] {logging_mixin.py:115} INFO - [2023-08-29 19:35:12,909] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:35:13,038] {logging_mixin.py:115} INFO - [2023-08-29 19:35:13,038] {dag.py:2398} INFO - Creating ORM DAG for example_python_operator
+[2023-08-29 19:35:13,152] {logging_mixin.py:115} INFO - [2023-08-29 19:35:13,149] {dag.py:2927} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2023-08-29 19:35:13,491] {logging_mixin.py:115} WARNING - /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py:609 DeprecationWarning: DAG.full_filepath is deprecated in favour of fileloc
+[2023-08-29 19:35:13,609] {logging_mixin.py:115} INFO - [2023-08-29 19:35:13,491] {dagbag.py:609} ERROR - Failed to write serialized DAG: /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 598, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/serialized_dag.py", line 138, in write_dag
+    session.query(literal(True))
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2734, in first
+    return self.limit(1)._iter().first()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2818, in _iter
+    result = self.session.execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1519, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 721, in _connection_for_bind
+    self._assert_active()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 601, in _assert_active
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.DatabaseError) database disk image is malformed
+[SQL: INSERT INTO dag_code (fileloc_hash, fileloc, last_updated, source_code) VALUES (?, ?, ?, ?)]
+[parameters: (37742579965623775, '/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py', '2023-08-29 22:35:13.162360', '#\n# Licensed to the Apache Software Foundation (ASF) under one\n# or more contributor license agreements.  See the NOTICE file\n# distributed with t ... (3090 characters truncated) ...           sleep(10)\n            print(\'Finished\')\n\n        virtualenv_task = callable_virtualenv()\n        # [END howto_operator_python_venv]\n')]
+(Background on this error at: http://sqlalche.me/e/14/4xp6) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+[2023-08-29 19:35:13,610] {logging_mixin.py:115} INFO - [2023-08-29 19:35:13,610] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:35:13,613] {processor.py:164} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 155, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 660, in process_file
+    dagbag.sync_to_db()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 615, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/usr/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 629, in sync_to_db
+    DAG.bulk_write_to_db(self.dags.values(), session=session)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dag.py", line 2387, in bulk_write_to_db
+    orm_dags: List[DagModel] = with_row_locks(query, of=DagModel, session=session).all()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2683, in all
+    return self._iter().all()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2818, in _iter
+    result = self.session.execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1519, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 721, in _connection_for_bind
+    self._assert_active()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 601, in _assert_active
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.DatabaseError) database disk image is malformed
+[SQL: INSERT INTO dag_code (fileloc_hash, fileloc, last_updated, source_code) VALUES (?, ?, ?, ?)]
+[parameters: (37742579965623775, '/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py', '2023-08-29 22:35:13.162360', '#\n# Licensed to the Apache Software Foundation (ASF) under one\n# or more contributor license agreements.  See the NOTICE file\n# distributed with t ... (3090 characters truncated) ...           sleep(10)\n            print(\'Finished\')\n\n        virtualenv_task = callable_virtualenv()\n        # [END howto_operator_python_venv]\n')]
+(Background on this error at: http://sqlalche.me/e/14/4xp6) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+[2023-08-29 19:37:16,038] {processor.py:153} INFO - Started process (PID=19549) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2023-08-29 19:37:16,041] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2023-08-29 19:37:16,043] {logging_mixin.py:115} INFO - [2023-08-29 19:37:16,043] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2023-08-29 19:37:16,409] {logging_mixin.py:115} INFO - [2023-08-29 19:37:16,409] {example_python_operator.py:68} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2023-08-29 19:37:16,411] {processor.py:651} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2023-08-29 19:37:16,582] {logging_mixin.py:115} INFO - [2023-08-29 19:37:16,581] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:37:16,723] {logging_mixin.py:115} INFO - [2023-08-29 19:37:16,722] {dag.py:2398} INFO - Creating ORM DAG for example_python_operator
+[2023-08-29 19:37:16,787] {logging_mixin.py:115} INFO - [2023-08-29 19:37:16,787] {dag.py:2927} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2023-08-29 19:37:17,000] {logging_mixin.py:115} WARNING - /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py:609 DeprecationWarning: DAG.full_filepath is deprecated in favour of fileloc
+[2023-08-29 19:37:17,078] {logging_mixin.py:115} INFO - [2023-08-29 19:37:17,003] {dagbag.py:609} ERROR - Failed to write serialized DAG: /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 598, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/serialized_dag.py", line 138, in write_dag
+    session.query(literal(True))
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2734, in first
+    return self.limit(1)._iter().first()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2818, in _iter
+    result = self.session.execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1519, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 721, in _connection_for_bind
+    self._assert_active()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 601, in _assert_active
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.DatabaseError) database disk image is malformed
+[SQL: INSERT INTO dag_code (fileloc_hash, fileloc, last_updated, source_code) VALUES (?, ?, ?, ?)]
+[parameters: (37742579965623775, '/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py', '2023-08-29 22:37:16.795678', '#\n# Licensed to the Apache Software Foundation (ASF) under one\n# or more contributor license agreements.  See the NOTICE file\n# distributed with t ... (3090 characters truncated) ...           sleep(10)\n            print(\'Finished\')\n\n        virtualenv_task = callable_virtualenv()\n        # [END howto_operator_python_venv]\n')]
+(Background on this error at: http://sqlalche.me/e/14/4xp6) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+[2023-08-29 19:37:17,079] {logging_mixin.py:115} INFO - [2023-08-29 19:37:17,079] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:37:17,082] {processor.py:164} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 155, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 660, in process_file
+    dagbag.sync_to_db()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 615, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/usr/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 629, in sync_to_db
+    DAG.bulk_write_to_db(self.dags.values(), session=session)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dag.py", line 2387, in bulk_write_to_db
+    orm_dags: List[DagModel] = with_row_locks(query, of=DagModel, session=session).all()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2683, in all
+    return self._iter().all()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2818, in _iter
+    result = self.session.execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1519, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 721, in _connection_for_bind
+    self._assert_active()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 601, in _assert_active
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.DatabaseError) database disk image is malformed
+[SQL: INSERT INTO dag_code (fileloc_hash, fileloc, last_updated, source_code) VALUES (?, ?, ?, ?)]
+[parameters: (37742579965623775, '/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py', '2023-08-29 22:37:16.795678', '#\n# Licensed to the Apache Software Foundation (ASF) under one\n# or more contributor license agreements.  See the NOTICE file\n# distributed with t ... (3090 characters truncated) ...           sleep(10)\n            print(\'Finished\')\n\n        virtualenv_task = callable_virtualenv()\n        # [END howto_operator_python_venv]\n')]
+(Background on this error at: http://sqlalche.me/e/14/4xp6) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+[2023-08-29 19:38:38,017] {processor.py:153} INFO - Started process (PID=20193) to work on /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2023-08-29 19:38:38,020] {processor.py:641} INFO - Processing file /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2023-08-29 19:38:38,023] {logging_mixin.py:115} INFO - [2023-08-29 19:38:38,023] {dagbag.py:507} INFO - Filling up the DagBag from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2023-08-29 19:38:38,458] {logging_mixin.py:115} INFO - [2023-08-29 19:38:38,457] {example_python_operator.py:68} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2023-08-29 19:38:38,460] {processor.py:651} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2023-08-29 19:38:38,715] {logging_mixin.py:115} INFO - [2023-08-29 19:38:38,714] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:38:38,893] {logging_mixin.py:115} INFO - [2023-08-29 19:38:38,892] {dag.py:2398} INFO - Creating ORM DAG for example_python_operator
+[2023-08-29 19:38:38,992] {logging_mixin.py:115} INFO - [2023-08-29 19:38:38,992] {dag.py:2927} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2023-08-29 19:38:39,576] {logging_mixin.py:115} WARNING - /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py:609 DeprecationWarning: DAG.full_filepath is deprecated in favour of fileloc
+[2023-08-29 19:38:39,627] {logging_mixin.py:115} INFO - [2023-08-29 19:38:39,577] {dagbag.py:609} ERROR - Failed to write serialized DAG: /home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 598, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/serialized_dag.py", line 138, in write_dag
+    session.query(literal(True))
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2734, in first
+    return self.limit(1)._iter().first()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2818, in _iter
+    result = self.session.execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1519, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 721, in _connection_for_bind
+    self._assert_active()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 601, in _assert_active
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.DatabaseError) database disk image is malformed
+[SQL: INSERT INTO dag_code (fileloc_hash, fileloc, last_updated, source_code) VALUES (?, ?, ?, ?)]
+[parameters: (37742579965623775, '/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py', '2023-08-29 22:38:39.003208', '#\n# Licensed to the Apache Software Foundation (ASF) under one\n# or more contributor license agreements.  See the NOTICE file\n# distributed with t ... (3090 characters truncated) ...           sleep(10)\n            print(\'Finished\')\n\n        virtualenv_task = callable_virtualenv()\n        # [END howto_operator_python_venv]\n')]
+(Background on this error at: http://sqlalche.me/e/14/4xp6) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+[2023-08-29 19:38:39,630] {logging_mixin.py:115} INFO - [2023-08-29 19:38:39,630] {dag.py:2379} INFO - Sync 1 DAGs
+[2023-08-29 19:38:39,633] {processor.py:164} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 155, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 660, in process_file
+    dagbag.sync_to_db()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 615, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/usr/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dagbag.py", line 629, in sync_to_db
+    DAG.bulk_write_to_db(self.dags.values(), session=session)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/models/dag.py", line 2387, in bulk_write_to_db
+    orm_dags: List[DagModel] = with_row_locks(query, of=DagModel, session=session).all()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2683, in all
+    return self._iter().all()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2818, in _iter
+    result = self.session.execute(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1519, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 721, in _connection_for_bind
+    self._assert_active()
+  File "/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 601, in _assert_active
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.DatabaseError) database disk image is malformed
+[SQL: INSERT INTO dag_code (fileloc_hash, fileloc, last_updated, source_code) VALUES (?, ?, ?, ?)]
+[parameters: (37742579965623775, '/home/felipe/extracao_dados/venv/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py', '2023-08-29 22:38:39.003208', '#\n# Licensed to the Apache Software Foundation (ASF) under one\n# or more contributor license agreements.  See the NOTICE file\n# distributed with t ... (3090 characters truncated) ...           sleep(10)\n            print(\'Finished\')\n\n        virtualenv_task = callable_virtualenv()\n        # [END howto_operator_python_venv]\n')]
+(Background on this error at: http://sqlalche.me/e/14/4xp6) (Background on this error at: http://sqlalche.me/e/14/7s2a)
